@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Luz de Hada</title>
+  <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+
+  <header>
+    <img src="public/logo.png" alt="Logo del emprendimiento Luz de Hada" class="logo">
+    <h1>Luz de Hada</h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contáctanos</h2>
+    <p>Por favor llena el siguiente formulario para cotizaciones o dudas:</p>
+
+    <form id="contact-form" novalidate>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <input type="submit" class="btn-principal" value="Enviar">
+    </form>
+
+    <!-- Aquí van los mensajes -->
+    <p id="form-msg" class="form-msg"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Luz de Hada</p>
+    <p>Síguenos en <a href="https://www.instagram.com/velasluzdehada?igsh=M2tqNWZxZXB4M3I4&utm_source=qr" target="_blank">Instagram</a></p>
+  </footer>
+ <button id="theme-toggle">🌙 Cambiar tema</button>
+  <!-- JS para validación -->
+  <script type="module" src="public/js/dom.js"></script>
+ 
+</body>
+</html>
